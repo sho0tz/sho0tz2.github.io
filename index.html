@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İkinci Web Sitesi</title>
+    <style>
+        :root {
+            --titlebar-background: #2f3136;
+            --titlebar-height: 40px;
+            --titlebar-text-color: #ffffff;
+            --titlebar-button-color: #7289da;
+            --titlebar-button-hover: #5a6e9c;
+        }
+
+        .titlebar {
+            background-color: var(--titlebar-background);
+            height: var(--titlebar-height);
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            color: var(--titlebar-text-color);
+            font-size: 16px;
+            position: relative;
+        }
+
+        .titlebar-title {
+            flex-grow: 1;
+            font-weight: bold;
+        }
+
+        .titlebar-button {
+            background-color: var(--titlebar-button-color);
+            color: var(--titlebar-text-color);
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background 0.3s;
+        }
+
+        .titlebar-button:hover {
+            background-color: var(--titlebar-button-hover);
+        }
+
+        .titlebar-icon {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .titlebar {
+                font-size: 14px;
+            }
+          
+            .titlebar-button {
+                padding: 4px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="titlebar">
+        <span class="titlebar-title">İkinci Web Sitesi</span>
+        <button class="titlebar-button">Buton 1</button>
+        <button class="titlebar-button">Buton 2</button>
+    </div>
+    <pre>
+:root {
+    --titlebar-background: #2f3136;
+    --titlebar-height: 40px;
+    --titlebar-text-color: #ffffff;
+    --titlebar-button-color: #7289da;
+    --titlebar-button-hover: #5a6e9c;
+}
+
+.titlebar {
+    background-color: var(--titlebar-background);
+    height: var(--titlebar-height);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    color: var(--titlebar-text-color);
+    font-size: 16px;
+    position: relative;
+}
+
+.titlebar-title {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.titlebar-button {
+    background-color: var(--titlebar-button-color);
+    color: var(--titlebar-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.titlebar-button:hover {
+    background-color: var(--titlebar-button-hover);
+}
+
+.titlebar-icon {
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .titlebar {
+        font-size: 14px;
+    }
+  
+    .titlebar-button {
+        padding: 4px 8px;
+    }
+}
+    </pre>
+</body>
+</html>
